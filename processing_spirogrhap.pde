@@ -22,7 +22,7 @@ void draw() {
         line(x*sin(radians(angle)), 0, 0, y-dia/2);
 
         noStroke();
-        fill(#03FF1D)
+        fill(#03FF1D);
         ellipse(x*sin(radians(angle)), 0, dia/2, dia/2);
         stroke(#F6FF03);
         noFill();
