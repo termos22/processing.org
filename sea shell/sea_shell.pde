@@ -6,27 +6,27 @@ void setup(){
 
 void draw(){
     background(0);
-        translate(screen.width/2, screen.height/2);
-        for(int i=0; i<360; i+=20){
+        translate(width/2, height/2);
+        for (int i=0; i<360; i+=20){
             float x = sin(radians(i))*150;
             float y = cos(radians(i))*150;
             pushMatrix();
             translate(x, y);
-        rotate(radians(-i+frameCount));
+            rotate(radians(-i+frameCount));
             noStroke();
-          fill(sin(radians(i/2))*255, 50, 100);
+            fill(sin(radians(i/2))*255, 50, 100);
             rect(0, 0, 120, 20, 25);
             popMatrix();
         }
 
-        for (int i=0; i<360; 1+=20){
+        for (int i=0; i<360; i+=20){
             float x = sin(radians(i))*150;
             float y = cos(radians(i))*150;
             pushMatrix();
             translate(x, y);
-        rotate(radians(-i+frameCount+90));
+            rotate(radians(-i+frameCount+90));
             stroke(255);
-          fill(sin(radians(i/2))*255, 50, 100);
+            fill(sin(radians(i/2))*255, 50, 100);
             rect(0, 0, 120, 20, 25);
             popMatrix();
         }
